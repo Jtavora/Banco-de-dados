@@ -26,3 +26,13 @@ select nome|| 'trabalha como ' ||cargo as nome_cargo from funcionarios;
 select nome from funcionarios limit 2;
 
 select nome from funcionarios order by random() limit 3;
+
+select * from funcionarios where cargo like 'desenvolvedores%';
+select * from funcionarios where upper(cargo) like upper('desenvolvedores%');
+select * from funcionarios where cargo ilike 'desenvolvedores%';
+
+select * from funcionarios order by nome asc;
+select * from funcionarios order by salario desc;
+select * from funcionarios order by cargo desc, salario asc;
+
+
