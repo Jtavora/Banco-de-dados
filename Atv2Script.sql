@@ -27,4 +27,3 @@ select * from clientes where Endereco like '%Rua%';
 
 update clientes set endereco = 'Rua 14 sul' where id = 2;
 
-delete from clientes where id = 4;
